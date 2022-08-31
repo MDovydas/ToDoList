@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do list</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,200" />
+</head>
+<body>
+    <div class="enterBar" id="addBar">
+        <label>
+            <form>
+            <input type="text" placeholder="Enter your task here..." name="addTask" id="addField">
+            <button id="addButton">+</button>
+            </form>
+        </label>
+    </div>
+    <div class="enterBar" id="searchBar">
+        <label>
+            <input type="search" placeholder="Search for task..." name="searchTask" id="searchField">
+        </label>
+    </div>
+
+    <div class="tasksContainer" id="mainContainer">
+        <div id="task1">
+        <p>This is example task... Try to move it or remove it ;)</p>
+        <button class="material-symbols-outlined" id="button" onClick="this.parentNode.parentNode.removeChild(this.parentNode);">
+            delete
+        </button>
+        </div>
+    </div>
+
+</body>
+<script src="todo.js"></script>
+</html>
